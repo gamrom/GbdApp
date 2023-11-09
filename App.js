@@ -1,13 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-// import { StyleSheet, Text, View } from 'react-native';
-import { Text, View } from 'react-native';
+import { Login } from '@pages/Login';
+import { View } from 'react-native';
 import tw from 'twrnc';
+import { Provider as PaperProvider, MD3LightTheme as DefaultTheme } from 'react-native-paper';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
+const theme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: "rgb(80, 150, 205)",
+  },
+};
 
 export default function App() {
   return (
-    <View style={tw`flex-1 items-center justify-center bg-white`}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <PaperProvider theme={theme}>
+        <View style={tw`px-[15px]`}>
+          <Login />
+        </View>
+      </PaperProvider>
+    </SafeAreaProvider>
   );
 }
