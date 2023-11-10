@@ -15,7 +15,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-    }
+    }AQ
     dependencies {
         classpath('com.android.tools.build:gradle:7.4.2')
         classpath('com.facebook.react:react-native-gradle-plugin')
