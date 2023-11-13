@@ -9,6 +9,14 @@ import { Register } from '@screens/Register';
 import { RegisterWait } from '@screens/RegisterWait';
 import { Main } from '@screens/Main';
 import { CreateSchedule } from '@screens/CreateSchedule';
+// import firebase from 'firebase/app';
+// import 'firebase/auth';
+
+// import { firebaseConfig } from './firebaseConfig';
+
+// if (!firebase.apps.length) {
+//   firebase.initializeApp(firebaseConfig);
+// }
 
 const Stack = createNativeStackNavigator();
 
